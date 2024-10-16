@@ -4,7 +4,7 @@ import foto2 from "./assets/foto2.png";
 import foto3 from "./assets/foto3.png";
 import foto4 from "./assets/foto4.png";
 import { CardComponent } from "./components/CardComponent";
-import { ListComponent } from "./components/listComponent";
+
 import br from "./assets/br.png";
 import en from "./assets/en.png";
 import it from "./assets/it.png"
@@ -13,6 +13,7 @@ import sevenen from "./assets/sevenen.png";
 import sevenit from "./assets/sevenit.png"
 import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
+import { ListComponent } from "./components/ListComponent";
 
 function App() {
   const [language, setLanguage] = useState("pt");
