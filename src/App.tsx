@@ -1,18 +1,29 @@
 import { useTranslation } from "react-i18next";
-import foto1 from "./assets/foto1.png";
-import foto2 from "./assets/foto2.png";
+// import foto1 from "./assets/foto1.png";
+// import foto2 from "./assets/foto2.png";
 import foto3 from "./assets/foto3.png";
-import foto4 from "./assets/foto4.png";
+// import foto4 from "./assets/foto4.png";
+
+import photo1 from "./assets/photo1.png";
+import photo2 from "./assets/photo2.png";
+// import photo3 from "./assets/photo3.png";
+import photo4 from "./assets/photo4.png";
+import photo5 from "./assets/photo5.png";
+import photo6 from "./assets/photo6.png";
+import photo7 from "./assets/photo7.png";
+
 import { CardComponent } from "./components/CardComponent";
 
 import br from "./assets/br.png";
 import en from "./assets/en.png";
-import it from "./assets/it.png"
+import it from "./assets/it.png";
+
 import seven from "./assets/seven.png";
 import sevenen from "./assets/sevenen.png";
-import sevenit from "./assets/sevenit.png"
+import sevenit from "./assets/sevenit.png";
+
 import { useState } from "react";
-import { FaChevronDown } from "react-icons/fa";
+import { FaChevronDown, FaInstagram } from "react-icons/fa";
 import { ListComponent } from "./components/ListComponent";
 
 function App() {
@@ -30,7 +41,7 @@ function App() {
 
   return (
     <div className="flex flex-col  ">
-      <header className="flex justify-center gap-4 bg-blue-400">
+      <header className=" justify-center gap-4 bg-blue-400 hidden">
         <button type="button" onClick={() => handleChangeLanguage("en")}>
           <img src={en} alt="" width={32}  />
         </button>
@@ -44,7 +55,7 @@ function App() {
       <main >
         <section className="pb-4 flex flex-col md:flex-row-reverse items-center md:justify-center max-w-6xl mx-auto">
           <div>
-            <img src={foto1} alt="" className="-mt-[0.26px]" />
+            <img src={photo1} alt="" className="-mt-[0.26px]" />
           </div>
           <div className="flex flex-col px-4 gap-4 items-center md:items-start">
             <h1 className="text-3xl font-extrabold text-blue-300 text-center md:text-6xl md:text-start md:w-[450px] ">
@@ -109,22 +120,25 @@ function App() {
               </ul>
             </div>
             <div>
-              <a href="#sell"  className="bg-red-300 px-4 py-4 text-white font-bold text-xl rounded-3xl md:-mt-14 -mt-8 max-w-[260px] md:max-w-full">{t("GET YOUR E-BOOK NOW!")}</a>
+              <a href="#sell"  className="bg-red-300 px-4 py-4 text-white font-bold md:text-xl rounded-3xl md:-mt-14 -mt-8 max-w-[260px] md:max-w-full">{t("GET YOUR E-BOOK NOW!")}</a>
             </div>
           </div>
         </section>
-        <section className="pt-4 flex flex-col  border-blue-400 border-b-8 ">
-          <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 items-end  bg-cover  bg-italy md:pt-24 ">
-            <div className="col-span-3 lg:col-span-1">
-              <img src={foto2} alt="" />
+        <section className="pt-4 flex flex-col  border-blue-400 border-b-8  ">
+          <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-7 items-end  bg-cover  bg-italy md:pt-24 pb-8 ">
+            <div className="col-span-3 lg:col-span-3  max-md:hidden h-full">
+              <img src={photo2} alt="" className="h-full" />
             </div>
-            <div className="text-center px-4 flex flex-col gap-4 md:gap-8 md:py-8 col-span-2 lg:col-span-2 py-4 md:text-end md:items-end ">
-              <h1 className="text-2xl text-blue-300 font-bold md:text-6xl md:w-[500px] md:text-end ">
+            <div className="text-center px-4 flex flex-col gap-4 md:gap-8 md:py-8 col-span-2 lg:col-span-4 py-4 md:text-end md:items-end ">
+              <h1 className="text-4xl text-blue-300 font-bold md:text-6xl md:w-[90%] md:text-end  ">
                 {t("But who is Shirlei Soares?")}
               </h1>
+             
               <h2 className="text-lg font-bold text-blue-300 md:text-2xl">
                 {t("Credit consultant registered with OAM.")}
               </h2>
+              <img src={photo7} alt="" className="md:hidden" />
+              <div className="flex flex-col gap-4 ">
               <p
                 className="text-blue-300 md:text-xl "
                 dangerouslySetInnerHTML={{
@@ -149,6 +163,7 @@ function App() {
                   ),
                 }}
               ></p>
+              </div>
             </div>
           </div>
         </section>
@@ -190,12 +205,14 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="bg-blue-400  mt-4 grid grid-cols-1 md:grid-cols-2 relative lg:grid-cols-3  ">
+        <section className="  mt-4 grid md:grid-cols-1 lg:grid-cols-3 gap-4 max-md:px-4   py-8 ">
           <div className="max-md:hidden" >
-            <img src={foto4} alt="" className="md:absolute bottom-0 left-0 md:w-[420px] lg:w-[480px] md:-mb-[16px]
-            lg:-mb-[19px] lg:-ml-16 md:-ml-14"  />
+            <img src={photo6} alt="" className=""  />
           </div>
-          <div className="flex flex-col items-center gap-4 py-4 md:py-14 lg:gap-10 lg:justify-center lg:col-span-2 ">
+          <div className="md:hidden flex justify-center ">
+            <img src={photo4} alt="" className="w-full" />
+          </div>
+          <div className="flex flex-col bg-blue-300 items-center gap-4 py-4 md:py-14 lg:gap-10 lg:justify-center rounded-tl-2xl rounded-bl-2xl max-md:rounded-2xl md:col-span-2 ">
             <h1 className="text-2xl md:text-3xl text-center font-bold text-white px-8">
               {t(
                 "What you will learn in the E-book - Master your credit score in Italy"
@@ -227,11 +244,14 @@ function App() {
             </div>
           </div>
         </section>
-        <section id="sell" className="flex flex-col px-4 py-4 gap-8 items-center md:flex-row md:justify-center lg:py-14 ">
-          <div className="flex flex-col items-center">
-            <div className="bg-blue-400 flex flex-col items-center py-8 text-white gap-2  rounded-3xl h-[450px] min-w-[310px]  ">
-              <div className="flex flex-col items-center justify-between h-full pb-4">
-                <h1 className="font-bold md:text-2xl px-4">{t("ALL THIS WOULD COST")}</h1>
+        <section>
+          <img src={photo5} alt="" className="w-full"/>
+        </section>
+        <section id="sell" className="flex flex-col px-4 py-10 gap-8 items-center md:flex-row md:justify-center lg:py-14 ">
+          <div className="flex flex-col items-center ">
+            <div className="bg-blue-400 flex flex-col items-center py-8 text-white gap-2  rounded-3xl h-[450px] w-[310px]  ">
+              <div className="flex flex-col items-center justify-between h-full pb-4 ">
+                <h1 className="font-bold md:text-2xl px-4 text-center">{t("ALL THIS WOULD COST")}</h1>
                 <span className="line-through decoration-red-500 font-bold md:text-xl ">
                   R$185,00
                 </span>
@@ -248,7 +268,7 @@ function App() {
                   </div>
                   <div className="flex gap-1 text-sm">
                     <span>{t("OR")}</span>
-                    <span> R$57,00</span>
+                    <span> R$67,00</span>
                     <span>{t("in sight")}</span>
                   </div>
                 </div>
@@ -264,7 +284,7 @@ function App() {
           </div>
 
           <div className="flex flex-col items-center">
-          <div className="bg-blue-400 flex flex-col items-center py-8 text-white gap-2 rounded-3xl h-[450px] min-w-[310px]  ">
+          <div className="bg-blue-400 flex flex-col items-center py-8 text-white gap-2 rounded-3xl h-[450px] w-[310px]  ">
           <div className="flex flex-col items-center justify-between h-full pb-4">
             <h1 className="font-bold text-center md:text-2xl px-4 md:w-[300px]">
               {t("YOU CAN HAVE ACCESS TODAY ONLY")}
@@ -272,11 +292,11 @@ function App() {
             <p className="text-center px-8">
               {t("TO CREDIT CONSULTANCY + E-BOOK")}
             </p>
-            <span className="line-through decoration-red-500 border-t-2 md:text-xl">
+            <span className="line-through decoration-red-500  md:text-xl">
               {t("CONSULTANCY: R$720.00")}
             </span>
             <span>+</span>
-            <span className="line-through decoration-red-500 border-t-2 md:text-xl">
+            <span className="line-through decoration-red-500  md:text-xl">
               {t("E-BOOK: R$185.00")}
             </span>
            
@@ -288,7 +308,7 @@ function App() {
               </div>
               <div className="flex gap-1 text-sm">
                 <span>{t("OR")}</span>
-                <span> R$593,00</span>
+                <span> R$637,00</span>
                 <span>{t("in sight")}</span>
               </div>
             </div>
@@ -319,7 +339,13 @@ function App() {
           </span>
         </div>
 
+
+  <a href="https://www.instagram.com/mano.lucio/" target="_blank" className="flex gap-1 items-center">
         <p>{t("DEVELOPED BY AGÉCIA LÁDAME")}</p>
+
+        <FaInstagram />
+        </a>
+      
       </footer>
     </div>
   );
