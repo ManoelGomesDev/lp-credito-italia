@@ -120,7 +120,7 @@ function App() {
               </ul>
             </div>
             <div>
-              <a href="#sell"  className="bg-red-300 px-4 py-4 text-white font-bold md:text-xl rounded-3xl md:-mt-14 -mt-8 max-w-[260px] md:max-w-full">{t("GET YOUR E-BOOK NOW!")}</a>
+              <a href="#sell"  className="bg-red-300 px-4 py-4 text-white font-bold text-[10px] md:text-xl rounded-3xl md:-mt-14 -mt-8  ">{t("GET YOUR E-BOOK NOW!")}</a>
             </div>
           </div>
         </section>
@@ -249,7 +249,7 @@ function App() {
         </section>
         <section id="sell" className="flex flex-col px-4 py-10 gap-8 items-center md:flex-row md:justify-center lg:py-14 ">
           <div className="flex flex-col items-center ">
-            <div className="bg-blue-400 flex flex-col items-center py-8 text-white gap-2  rounded-3xl h-[450px] w-[310px]  ">
+            <div className="bg-blue-400 flex flex-col items-center py-8 text-white gap-2  rounded-3xl h-[450px] sm-w-[310px]  ">
               <div className="flex flex-col items-center justify-between h-full pb-4 ">
                 <h1 className="font-bold md:text-2xl px-4 text-center">{t("ALL THIS WOULD COST")}</h1>
                 <span className="line-through decoration-red-500 font-bold md:text-xl ">
@@ -284,7 +284,7 @@ function App() {
           </div>
 
           <div className="flex flex-col items-center">
-          <div className="bg-blue-400 flex flex-col items-center py-8 text-white gap-2 rounded-3xl h-[450px] w-[310px]  ">
+          <div className="bg-blue-400 flex flex-col items-center py-8 text-white gap-2 rounded-3xl h-[450px]sm-w-[310px]  ">
           <div className="flex flex-col items-center justify-between h-full pb-4">
             <h1 className="font-bold text-center md:text-2xl px-4 md:w-[300px]">
               {t("YOU CAN HAVE ACCESS TODAY ONLY")}
