@@ -153,7 +153,7 @@ function App() {
           <section className="mt-[5.625rem] flex flex-col lg:flex-row px-4 ">
             
               <div className=" max-md:hidden  flex justify-center  ">
-                <img src={photo2} alt="" className="w-[50%]" />
+                <img src={photo2} alt="" className="w-[50%] md:w-full" />
               </div>
             
               <div className="text-center md:text-end md:items-end w-full ">
