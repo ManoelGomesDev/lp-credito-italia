@@ -13,7 +13,7 @@ export const CardComponent = ({content}:CardComponentProps) => {
 
             <IoCheckmarkCircle color="white" size={32} />
             </div>
-            <p className="text-white md:text-2xl">{content}</p>
+            <p className="text-white md:text-xl">{content}</p>
         </div>
     )
 }

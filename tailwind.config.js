@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-       'italy':"url('./assets/fundoitaly.png')"
+       'italy':"url('./assets/fundoitaly.png')",
+       'fundo':"url('./assets/fundo.png')",
       }
     },
     colors: {
@@ -15,7 +16,7 @@ export default {
       'blue-200': '#3c416c' ,
       'blue-300': '#1e2245',
       'blue-400': '#1f2346',
-      'red-300': '#bc887a',
+      'red-300': '#AE715F',
       'red-500': '#ff0404'
 
     }
