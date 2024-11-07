@@ -29,6 +29,8 @@ import { ListComponent } from "./components/ListComponent";
 function App() {
   const [language, setLanguage] = useState("pt");
 
+  console.log(language);
+
   const {
     t,
     i18n: { changeLanguage },
