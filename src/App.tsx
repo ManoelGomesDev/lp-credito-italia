@@ -58,8 +58,8 @@ function App() {
         <main >
           <section className="pb-4 flex flex-col gap-4  items-center px-4  ">
             <div className="">
-              <div className="flex flex-col items-center md:flex-row">
-                <div className="flex flex-col justify-between">
+              <div className="flex flex-col items-center md:flex-row ">
+                <div className="flex flex-col justify-between md:h-[350px]">
               <h1 className="text-3xl font-extrabold text-blue-300 text-center md:text-6xl md:text-start md:w-[450px] ">
                 {t("Master your credit history").toUpperCase()}
               </h1>
@@ -152,12 +152,12 @@ function App() {
           </section>
           <section className="mt-[5.625rem] flex flex-col lg:flex-row px-4 ">
             
-              <div className=" max-md:hidden   ">
-                <img src={photo2} alt="" className="w-full" />
+              <div className=" max-md:hidden  flex justify-center  ">
+                <img src={photo2} alt="" className="w-[50%]" />
               </div>
             
               <div className="text-center md:text-end md:items-end w-full ">
-                <div className="flex flex-col gap-2 ">
+                <div className="flex flex-col gap-2  px-4 ">
                   <h1 className="text-4xl text-blue-300 font-bold md:text-7xl md:text-end   ">
                     {t("But who is Shirlei Soares?")}
                   </h1>
