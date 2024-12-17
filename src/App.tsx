@@ -333,11 +333,9 @@ function App() {
               </a>
             </div>
 
-            <div className="">
-              <p className="font-bold text-2xl text-blue-300">{t("OR")}</p>
-            </div>
+         
 
-            <div className="flex flex-col items-center">
+            {/* <div className="flex flex-col items-center">
               <div className="bg-blue-400 flex flex-col items-center py-8 text-white gap-2 rounded-3xl h-[450px] w-[310px]  ">
                 <div className="flex flex-col items-center justify-between h-full pb-4">
                   <h1 className="font-bold text-center md:text-2xl px-4 md:w-[300px]">
@@ -375,7 +373,7 @@ function App() {
               >
                 {t("I WANT TO SECURE MY SPOT NOW!")}
               </a>
-            </div>
+            </div> */}
           </section>
           <section className="flex flex-col mt-8 px-4 ">
             <div className="w-full">
